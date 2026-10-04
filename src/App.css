@@ -77,3 +77,69 @@
 .sheet tbody:last-of-type tr:last-child > * {
   border-bottom: 0;
 }
+
+.stack {
+  display: grid;
+  gap: 24px;
+  width: 890px;
+  max-width: 100%;
+}
+
+.heading {
+  margin: 0 0 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #25262b;
+}
+
+.showcase {
+  display: grid;
+  gap: 32px;
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+.legend {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #686b73;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.cell {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+
+.states {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 24px;
+}
+
+.stateCell {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  justify-items: start;
+  min-height: 396px;
+}
+
+.caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #686b73;
+}
