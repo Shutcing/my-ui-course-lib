@@ -1,5 +1,5 @@
-import { Button } from './components/Button'
-import type { ButtonSize, ButtonState, ButtonVariant } from './components/ButtonProps'
+import { Button } from './components/Button/Button'
+import type { ButtonSize, ButtonState, ButtonVariant } from './components/Button/ButtonProps'
 import './App.css'
 
 const VARIANTS: ButtonVariant[] = ['fill', 'outline', 'text']
