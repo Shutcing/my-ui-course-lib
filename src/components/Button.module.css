@@ -1,0 +1,102 @@
+.button {
+  --surface: transparent;
+  --fg: #17171b;
+  --edge: transparent;
+  --shadow: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  appearance: none;
+  box-sizing: border-box;
+  padding: 0;
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--fg);
+  box-shadow: var(--shadow);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button[data-size='s'] {
+  height: 36px;
+  min-width: 140px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.button[data-size='m'] {
+  height: 44px;
+  min-width: 140px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.button[data-size='l'] {
+  height: 52px;
+  min-width: 150px;
+  padding: 0 24px;
+  font-size: 16px;
+}
+
+.button[data-variant='fill'] {
+  --surface: #17171b;
+  --fg: #ffffff;
+  --shadow: 0 1px 2px #00000014;
+}
+
+.button[data-variant='outline'] {
+  --edge: #17171b;
+  --shadow: 0 1px 2px #00000014;
+}
+
+.button[data-variant='fill']:not([data-state]):hover:not(:disabled),
+.button[data-variant='fill'][data-state='hover'] {
+  --surface: #2d2d33;
+}
+
+.button[data-variant='outline']:not([data-state]):hover:not(:disabled),
+.button[data-variant='outline'][data-state='hover'] {
+  --surface: #f4f4f5;
+}
+
+.button[data-variant='text']:not([data-state]):hover:not(:disabled),
+.button[data-variant='text'][data-state='hover'] {
+  --surface: #f4f4f5;
+  --shadow: 0 1px 2px #00000014;
+}
+
+.button[data-variant='fill']:not([data-state]):active:not(:disabled),
+.button[data-variant='fill'][data-state='active'] {
+  --surface: #050506;
+}
+
+.button[data-variant='outline']:not([data-state]):active:not(:disabled),
+.button[data-variant='outline'][data-state='active'] {
+  --surface: #e7e7ea;
+}
+
+.button[data-variant='text']:not([data-state]):active:not(:disabled),
+.button[data-variant='text'][data-state='active'] {
+  --surface: #e7e7ea;
+}
+
+.button:not([data-state]):active:not(:disabled),
+.button[data-state='active'] {
+  --shadow: none;
+}
+
+.button:disabled,
+.button[data-state='disabled'] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

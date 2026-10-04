@@ -1,0 +1,43 @@
+# Зависимости
+node_modules/
+
+# Сборка
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Кэши и отчёты
+.vite/
+coverage/
+
+# Логи
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Локальное окружение
+.env
+.env.*
+!.env.example
+*.local
+
+# Редакторы
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# ОС
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Прочее
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
